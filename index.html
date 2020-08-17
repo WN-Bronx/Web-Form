@@ -8,13 +8,80 @@
     </head>
 
     <body>
-        <div>
-            <form>
-                <input>
-                
-                </input>
-            </form>
-        </div>
+        
+        <form>
+            <div>
+                <label for="">Nome</label>
+                <input name="nome" required="required" placeholder="Digite seu nome" type="text"></input>
+            </div>
+
+            <div>
+                <label for="">Data de Nascimento</label>
+                <input name="dtnasc" required="required" placeholder="Digite sua data de nascimento" type="date"></input>
+            </div>
+
+            <div>
+                <label for="">Fone</label>
+                <input name="fone" required="required" placeholder="Digite um telefone" type="tel"></input>
+            </div>
+
+            <div>
+                <p>Selecione seu sexo</p>
+                <label for="sexoM">
+                    <input name="sexo"  value="m" id="sexoM" type="radio">Masculino</input>
+                </label>
+                <label for="sexoF">
+                    <input name="sexo"  value="f" id="sexoF" type="radio">Feminino</input>
+                </label>
+            </div>
+
+            <div>
+                <label for="">E-mail</label>
+                <input name="email" required="required" placeholder="Digite seu e-mail" type="email"></input>
+            </div>
+            
+            <div>
+                <label for="">Logradouro</label>
+                <input name="logradouro" required="required" placeholder="Digite seu endereço" type="text"></input>
+            </div>
+
+            <div>
+                <label for="">Nº</label>
+                <input name="logradouro" required="required" placeholder="Digite seu número" type="number"></input>
+            </div>
+
+            <div>
+                <label for="">Complemento</label>
+                <input name="complemento" required="required" placeholder="Digite um complemento" type="text"></input>
+            </div>
+
+            <div>
+                <label for="">Selecione sua cidade</label>
+                <select name="cidade" required="required">
+                    <option selected="selected" value="">Selecione</option>
+                    <option value="1">Blumenau</option>
+                    <option value="2">Gaspar</option>
+                    <option value="3">Timbo</option>                    
+                    <option value="4">Indaial</option>
+                    <option value="5">Dr Pedrinho</option>
+                </select>                
+            </div>
+
+            <div>
+                <label for="">Bairro</label>
+                <input name="bairro" required="required" placeholder="Digite seu bairro" type="text"></input>
+            </div>
+
+            <div>
+                <label for="">CEP</label>
+                <input name="cep" required="required" placeholder="Digite seu CEP" type="number"></input>
+            </div>
+
+            <div>
+                <button name="enviar" value="1" type="submit">Enviar</button>
+            </div>
+            
+        </form>
 
     </body>
 
