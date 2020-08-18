@@ -1,0 +1,79 @@
+body{
+    background-color: silver;
+    margin: 25px 0px;
+    padding: 0px;
+    position: relative;
+    
+}
+
+.formulario {
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: slategrey;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px 10px 20px 10px;   
+}
+
+input{
+    width: 470px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 20px 5px 20px 10px; 
+}
+
+.name input:focus{
+    background-color: snow;
+}
+
+.enviar{
+    background-color: teal;
+    color: white;
+    height: 40px;
+    width: 150px;
+    margin: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background-color: silver;
+    border: 2px solid white;
+    color: black;
+}
+
+.dtnasc label{
+    padding: 20px 10px 20px 10px;
+}
+
+.sexo label{
+    padding: 20px 10px 20px 10px;
+}
+
+.sexo select{
+    padding: 4px 12px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 5px;
+    margin-left: 100px;
+}
+.cidade label{
+    padding: 20px 10px 20px 10px;
+}
+
+.cidade select{
+    padding: 4px 12px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 5px;
+    margin-left: 70px;
+}

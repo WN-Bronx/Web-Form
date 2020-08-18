@@ -9,53 +9,35 @@
 
     <body>
         
-        <form>
-            <div>
-                <label for="">Nome</label>
-                <input name="nome" required="required" placeholder="Digite seu nome" type="text"></input>
-            </div>
-
-            <div>
-                <label for="">Data de Nascimento</label>
-                <input name="dtnasc" required="required" placeholder="Digite sua data de nascimento" type="date"></input>
-            </div>
-
-            <div>
-                <label for="">Fone</label>
-                <input name="fone" required="required" placeholder="Digite um telefone" type="tel"></input>
-            </div>
-
-            <div>
-                <p>Selecione seu sexo</p>
-                <label for="sexoM">
-                    <input name="sexo"  value="m" id="sexoM" type="radio">Masculino</input>
-                </label>
-                <label for="sexoF">
-                    <input name="sexo"  value="f" id="sexoF" type="radio">Feminino</input>
-                </label>
-            </div>
-
-            <div>
-                <label for="">E-mail</label>
-                <input name="email" required="required" placeholder="Digite seu e-mail" type="email"></input>
-            </div>
+        <form method="POST" action="" class="formulario">
             
-            <div>
-                <label for="">Logradouro</label>
-                <input name="logradouro" required="required" placeholder="Digite seu endereço" type="text"></input>
+            <div class="name">
+                <input type="text" name="nome" placeholder="Informe seu nome" required="required" autofocus></input>
             </div>
 
-            <div>
-                <label for="">Nº</label>
-                <input name="logradouro" required="required" placeholder="Digite seu número" type="number"></input>
+            <div class="email">
+                <input type="email" name="email" placeholder="Informe seu e-mail" required="required"></input>
             </div>
 
-            <div>
-                <label for="">Complemento</label>
-                <input name="complemento" required="required" placeholder="Digite um complemento" type="text"></input>
+            <div class="dtnasc">
+                <label>Data de Nascimento</label>
+                <input type="date" name="dtnasc" placeholder="Informe sua data de nascimento" required="required"></input>
             </div>
 
-            <div>
+            <div class="fone">
+                <input type="tel" name="fone" placeholder="Informe seu telefone" required="required"></input>
+            </div>
+
+            <div class="sexo">
+                <label for="">Selecione seu sexo</label>
+                <select name="sexo" required="required">
+                    <option selected="selected" value="">Selecione</option>
+                    <option value="1">Masculino</option>
+                    <option value="2">Feminino</option>
+                </select>                
+            </div>
+
+            <div class="cidade">
                 <label for="">Selecione sua cidade</label>
                 <select name="cidade" required="required">
                     <option selected="selected" value="">Selecione</option>
@@ -67,20 +49,29 @@
                 </select>                
             </div>
 
-            <div>
-                <label for="">Bairro</label>
-                <input name="bairro" required="required" placeholder="Digite seu bairro" type="text"></input>
+            <div class="logradouro">
+                <input type="text" name="logradouro" placeholder="Informe seu endereço" required="required"></input>
+            </div>
+
+            <div class="numero">
+                <input type="number" name="numero" placeholder="Informe o número" required="required"></input>
+            </div>
+
+            <div class="complemento">
+                <input type="text" name="complemento" placeholder="Informe o complemento" required="required"></input>
+            </div>
+
+            <div class="bairro">
+                <input type="text" name="bairro" placeholder="Informe seu bairro" required="required"></input>
+            </div>
+
+            <div class="cep">
+                <input type="number" name="cep" placeholder="Informe seu CEP" required="required"></input>
             </div>
 
             <div>
-                <label for="">CEP</label>
-                <input name="cep" required="required" placeholder="Digite seu CEP" type="number"></input>
+                <button class="enviar" name="enviar" value="1" type="submit">Enviar</button>
             </div>
-
-            <div>
-                <button name="enviar" value="1" type="submit">Enviar</button>
-            </div>
-            
         </form>
 
     </body>
